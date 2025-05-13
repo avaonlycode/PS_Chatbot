@@ -35,6 +35,10 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
    EMAIL_PASSWORD=your_email_password
    EMAIL_RECIPIENT=ps@society.de
    ```
+4. Model Downloaden:
+   ```
+   python scripts/download_model.py
+   ```
 
 ## Verwendung
 
@@ -44,6 +48,11 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
    ```
 2. Webhook für Telegram einrichten oder mit Polling starten
 3. Bot im Telegram-Chat mit `/start` starten
+4. Runpod mit Telegramm Bot Connecten
+   ```
+   curl -X POST "https://api.telegram.org/bot7914580183:AAGgOiqMCLrLtAu1MAAfL22cz3Bweglv0H4/setWebhook" \
+     -d url=https://RunPod_ID-Port.proxy.runpod.net/webhook
+   ```
 
 ## Fragebogen-Struktur
 
