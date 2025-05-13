@@ -7,13 +7,16 @@ from telegram.ext import (
     filters
 )
 from fastapi import Request
-from .config import TELEGRAM_TOKEN
+from .config import TELEGRAM_TOKEN, EMAIL_RECIPIENT
 from .llm import get_pipeline, generate_answer
 from .questionnaire import questionnaire_manager
 
 import faiss, json
 from sentence_transformers import SentenceTransformer
+import logging
 
+# Logger konfigurieren
+logger = logging.getLogger(__name__)
 
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 index = faiss.read_index("app/data/company.index")
@@ -51,10 +54,12 @@ async def chat_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
         else:
             # Fragebogen ist abgeschlossen
-            await update.message.reply_text(
-                "Thank you for completing the questionnaire! Your responses have been saved. "
+            completion_message = (
+                "Thank you for completing the questionnaire! Your responses have been saved.\n\n"
+                f"A PDF summary of your responses will be generated and sent to {EMAIL_RECIPIENT}.\n\n"
                 "You can now ask questions about Product Society."
             )
+            await update.message.reply_text(completion_message)
     
     # Normale Chat-Verarbeitung, wenn kein Fragebogen aktiv ist
     context_snippet = retrieve_context(user_text, k=3)
