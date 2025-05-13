@@ -4,3 +4,6 @@ python-telegram-bot
 transformers
 torch
 huggingface-hub
+accelerate
+sentence-transformers
+faiss-cpu
