@@ -39,6 +39,10 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
    ```
    python scripts/download_model.py
    ```
+5. Create Index:
+   ```
+   python scripts/build_index.py
+   ```
 
 ## Verwendung
 
@@ -50,7 +54,7 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
 3. Bot im Telegram-Chat mit `/start` starten
 4. Runpod mit Telegramm Bot Connecten
    ```
-   curl -X POST "https://api.telegram.org/bot7914580183:AAGgOiqMCLrLtAu1MAAfL22cz3Bweglv0H4/setWebhook" \
+   curl -X POST "https://api.telegram.org/BotID/setWebhook" \
      -d url=https://RunPod_ID-Port.proxy.runpod.net/webhook
    ```
 
