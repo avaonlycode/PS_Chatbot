@@ -1,0 +1,318 @@
+[
+  {
+    "id": "product_development_type",
+    "section": "Product Development Request",
+    "text": "What type of product development is being requested? (New Development / Modify Existing / Formulate to Benchmark / Line Extension / PDR Revision / Formula Redirect / Tech Transfer)",
+    "type": "choice",
+    "options": [
+      "New Development",
+      "Modify Existing",
+      "Formulate to Benchmark",
+      "Line Extension",
+      "PDR Revision",
+      "Formula Redirect",
+      "Tech Transfer"
+    ]
+  },
+  {
+    "id": "customer_company",
+    "section": "Customer Profile",
+    "text": "What is the name of the company or brand?",
+    "type": "text"
+  },
+  {
+    "id": "customer_contact_name",
+    "section": "Customer Profile",
+    "text": "Who is the contact person?",
+    "type": "text"
+  },
+  {
+    "id": "customer_phone",
+    "section": "Customer Profile",
+    "text": "What is the contact's phone number?",
+    "type": "text"
+  },
+  {
+    "id": "customer_email",
+    "section": "Customer Profile",
+    "text": "What is the contact's email?",
+    "type": "text"
+  },
+  {
+    "id": "product_name",
+    "section": "Customer Profile",
+    "text": "What is the product name?",
+    "type": "text"
+  },
+  {
+    "id": "product_name_confirmed",
+    "section": "Customer Profile",
+    "text": "Has the final product name been confirmed? (Yes/No)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "cosmetic_fill",
+    "section": "Customer Profile",
+    "text": "Will the product be filled as a cosmetic? (Yes/No + Instructions)",
+    "type": "text"
+  },
+  {
+    "id": "launch_channel",
+    "section": "Customer Profile",
+    "text": "What is the intended launch channel? (DTC / Retail)",
+    "type": "choice",
+    "options": [
+      "DTC",
+      "Retail"
+    ]
+  },
+  {
+    "id": "launch_date_estimated",
+    "section": "Customer Profile",
+    "text": "What is the estimated launch date?",
+    "type": "date"
+  },
+  {
+    "id": "launch_quantity_estimated",
+    "section": "Customer Profile",
+    "text": "What is the estimated launch quantity?",
+    "type": "number"
+  },
+  {
+    "id": "reorder_quantity_annual",
+    "section": "Customer Profile",
+    "text": "What is the estimated annual reorder quantity?",
+    "type": "number"
+  },
+  {
+    "id": "cost_target_per_unit",
+    "section": "Customer Profile",
+    "text": "What is the target cost per unit?",
+    "type": "text"
+  },
+  {
+    "id": "desired_fill_size",
+    "section": "Customer Profile",
+    "text": "What is the desired fill size?",
+    "type": "text"
+  },
+  {
+    "id": "packaging_reference",
+    "section": "Packaging",
+    "text": "What is the reference package and type?",
+    "type": "text"
+  },
+  {
+    "id": "packaging_material",
+    "section": "Packaging",
+    "text": "What is the packaging material, color, and finish?",
+    "type": "text"
+  },
+  {
+    "id": "label_type",
+    "section": "Packaging",
+    "text": "What label type is needed? (Front/Back / Wraparound / Top / Bottom / None)",
+    "type": "choice",
+    "options": [
+      "Front/Back",
+      "Wraparound",
+      "Top",
+      "Bottom",
+      "None"
+    ]
+  },
+  {
+    "id": "closure_type",
+    "section": "Packaging",
+    "text": "What type of closure is required? (Pump / Airless Pump / Foamer / Cap / Induction Seal / Other)",
+    "type": "text"
+  },
+  {
+    "id": "unit_carton_required",
+    "section": "Packaging",
+    "text": "Is a unit carton required? (Yes/No + Material/Color/Finish)",
+    "type": "text"
+  },
+  {
+    "id": "shrink_wrap_primary",
+    "section": "Packaging",
+    "text": "Is shrink wrap needed for primary packaging? (Yes/No)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "carton_seal_type",
+    "section": "Packaging",
+    "text": "What kind of seal will be used for the unit carton? (Shrink Wrap / Tamper Seal)",
+    "type": "choice",
+    "options": [
+      "Shrink Wrap",
+      "Tamper Seal"
+    ]
+  },
+  {
+    "id": "include_lot_code",
+    "section": "Packaging",
+    "text": "Should the unit carton include a lot code? (Yes/No)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "case_pallet_count",
+    "section": "Packaging",
+    "text": "What is the case count and pallet count?",
+    "type": "text"
+  },
+  {
+    "id": "packout_instructions",
+    "section": "Packaging",
+    "text": "What are the packout instructions? (Unit Carton, Inner Tamper Seal, Kit Status, Extra Costs, Outer Markings)",
+    "type": "text"
+  },
+  {
+    "id": "other_components",
+    "section": "Packaging",
+    "text": "Are there any other components or renderings provided? (Kit Description)",
+    "type": "text"
+  },
+  {
+    "id": "turnkey_project",
+    "section": "Packaging",
+    "text": "Should the project be turnkey? (Yes/No)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "bill_of_materials_available",
+    "section": "Packaging",
+    "text": "Is a Bill of Materials available? (If Applicable)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "handle_3pl_logistics",
+    "section": "Packaging",
+    "text": "Will Product Society handle 3PL logistics? (Yes/No)",
+    "type": "choice",
+    "options": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "formulation_type",
+    "section": "Formula Profile",
+    "text": "What type of formulation is being requested? (Cosmetic / OTC-Drug)",
+    "type": "choice",
+    "options": [
+      "Cosmetic",
+      "OTC-Drug"
+    ]
+  },
+  {
+    "id": "active_ingredients",
+    "section": "Formula Profile",
+    "text": "What are the active ingredients, if any? (List of Ingredients)",
+    "type": "text"
+  },
+  {
+    "id": "efficacy_claims",
+    "section": "Formula Profile",
+    "text": "What efficacy or performance claims are being made? (Claims)",
+    "type": "text"
+  },
+  {
+    "id": "marketing_claims",
+    "section": "Formula Profile",
+    "text": "What marketing claims apply to the product? (Organic / Paraben-Free / Vegan / etc.)",
+    "type": "text"
+  },
+  {
+    "id": "brand_story",
+    "section": "Formula Profile",
+    "text": "What is the brand or ingredient story? (Narrative)",
+    "type": "text"
+  },
+  {
+    "id": "application_area",
+    "section": "Formula Profile",
+    "text": "What is the application area for the product? (Face / Hair / Body / Other)",
+    "type": "text"
+  },
+  {
+    "id": "fragrance_and_color",
+    "section": "Formula Profile",
+    "text": "What is the desired fragrance level and color? (Fragrance Level / Color / Appearance)",
+    "type": "text"
+  },
+  {
+    "id": "ingredient_restrictions",
+    "section": "Formula Profile",
+    "text": "Are there required or restricted ingredients? (Required / Blacklist / Tech Transfer allowed?)",
+    "type": "text"
+  },
+  {
+    "id": "benchmark_product",
+    "section": "Benchmark",
+    "text": "What is the benchmark product? (Benchmark Name)",
+    "type": "text"
+  },
+  {
+    "id": "benchmark_msrp",
+    "section": "Benchmark",
+    "text": "What is its MSRP? (Benchmark MSRP)",
+    "type": "text"
+  },
+  {
+    "id": "benchmark_attributes",
+    "section": "Benchmark",
+    "text": "What are the favorable and negative attributes of the benchmark? (Favorable / Negative)",
+    "type": "text"
+  },
+  {
+    "id": "formula_validation_requirements",
+    "section": "Benchmark",
+    "text": "If a formula is provided for validation, what must be submitted? (Bench Sample, Specs, Micro, Stability, Match parameters)",
+    "type": "text"
+  },
+  {
+    "id": "distribution_markets",
+    "section": "Regulatory",
+    "text": "In which markets will the product be distributed? (US / Canada / Mexico / Europe / etc.)",
+    "type": "text"
+  },
+  {
+    "id": "sample_shipping_address",
+    "section": "Sampling Instructions",
+    "text": "Where should product samples be sent? (Address)",
+    "type": "text"
+  },
+  {
+    "id": "sample_account_number",
+    "section": "Sampling Instructions",
+    "text": "What FedEx or UPS account number should be used? (Account Number)",
+    "type": "text"
+  },
+  {
+    "id": "additional_comments",
+    "section": "Additional Comments",
+    "text": "Are there any additional comments or requirements? (Free-form entry)",
+    "type": "text"
+  }
+] 
