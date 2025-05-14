@@ -48,7 +48,7 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
 
 1. Bot starten:
    ```
-   uvicorn app.main:app
+   uvicorn app.main:app --host 0.0.0.0 --port 8080
    ```
 2. Webhook für Telegram einrichten oder mit Polling starten
 3. Bot im Telegram-Chat mit `/start` starten
