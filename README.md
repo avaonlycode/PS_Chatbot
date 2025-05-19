@@ -22,12 +22,38 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
 
 ## Installation
 
-1. Repository klonen
-2. Abhängigkeiten installieren:
+1. Clone Repository
+   ```
+   git clone https://github.com/avaonlycode/PS_Chatbot.git
+   ```
+4. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
-3. Umgebungsvariablen konfigurieren:
+6. Download Modell:
+   ```
+   python scripts/download_model.py
+   ```
+7. Create Index:
+   ```
+   python scripts/build_index.py
+   ```
+
+## Verwendung
+
+1. Start Bot:
+   ```
+   uvicorn app.main:app --host 0.0.0.0 --port 8080
+   ```
+4. Runpod mit Telegramm Bot Connecten
+   ```
+   curl -X POST "https://api.telegram.org/BotID/setWebhook" \
+     -d url=https://RunPod_ID-Port.proxy.runpod.net/webhook
+   ```
+   replace BotID and RunPod_ID with the right ids
+## Fragebogen-Struktur
+
+5. Umgebungsvariablen konfigurieren (Once the Email server is on):
    ```
    TELEGRAM_BOT_TOKEN=your_telegram_token
    HUGGINGFACE_HUB_TOKEN=your_huggingface_token
@@ -35,30 +61,6 @@ Ein Telegram-Chatbot für Product Society, der Produktentwicklungsanfragen über
    EMAIL_PASSWORD=your_email_password
    EMAIL_RECIPIENT=ps@society.de
    ```
-4. Model Downloaden:
-   ```
-   python scripts/download_model.py
-   ```
-5. Create Index:
-   ```
-   python scripts/build_index.py
-   ```
-
-## Verwendung
-
-1. Bot starten:
-   ```
-   uvicorn app.main:app --host 0.0.0.0 --port 8080
-   ```
-2. Webhook für Telegram einrichten oder mit Polling starten
-3. Bot im Telegram-Chat mit `/start` starten
-4. Runpod mit Telegramm Bot Connecten
-   ```
-   curl -X POST "https://api.telegram.org/BotID/setWebhook" \
-     -d url=https://RunPod_ID-Port.proxy.runpod.net/webhook
-   ```
-
-## Fragebogen-Struktur
 
 Der Fragebogen ist in folgende Abschnitte unterteilt:
 1. Product Development Request
